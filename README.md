@@ -51,7 +51,5 @@ Ben Hill
 
 #### UML
 
-- Currently no need for a UML.
-<!---
-Link to an image of the UML for your application and response to events
---->
+Initial draft of the project UML. 
+![Lab 07 UML](./assets/api-server-lab-07.jpeg)
