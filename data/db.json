@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Food",
+      "display_name": "Food display",
+      "description": "Display of food stuffs"
+    },
+    {
+      "cool": "beans",
+      "id": "iHd8loP"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "category": "candy",
+      "name": "whoppers",
+      "display_name": "Whoppers chocolate malt balls",
+      "descrition": "Malted chocolate balls with a satisfying crunch!"
+    },
+    {
+      "id": "3",
+      "category": "food",
+      "name": "foodstuffs",
+      "display_name": "more info on foodstuffs",
+      "descrition": "yummy foodstuffs"
+    }
+  ]
+}
