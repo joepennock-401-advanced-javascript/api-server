@@ -7,8 +7,10 @@
       "description": "Display of food stuffs"
     },
     {
-      "cool": "beans",
-      "id": "iHd8loP"
+      "id": "2",
+      "name": "moar food",
+      "display_name": "display my food",
+      "description": "yummy, tasty foods"
     }
   ],
   "products": [

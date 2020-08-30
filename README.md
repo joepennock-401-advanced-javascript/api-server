@@ -12,7 +12,7 @@
 - [ci/cd](#) - N/A
 - [back-end server url](#) - N/A
 - [front-end application](#) - N/A
-- [Current PR Request](https://github.com/joepennock-401-advanced-javascript/api-server/pull/1)
+- [Current PR Request](https://github.com/joepennock-401-advanced-javascript/api-server/pull/3)
 - [API Swagger Documentation](https://github.com/joepennock-401-advanced-javascript/api-server/blob/master/docs/openapi.json)
 
 ### Setup

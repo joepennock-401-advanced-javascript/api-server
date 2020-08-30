@@ -1,0 +1,37 @@
+{
+  "name": "api-server",
+  "version": "0.0.1",
+  "description": "An Express/Node.js based server designed to be a “model agnostic” REST API server, which can perform CRUD operations on any data model",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "--jest --verbose --coverage",
+    "watch": "--jest --verbose --coverage --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joepennock-401-advanced-javascript/api-server.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "server",
+    "api",
+    "rest",
+    "jest",
+    "javascript"
+  ],
+  "author": "Joe Pennock",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joepennock-401-advanced-javascript/api-server/issues"
+  },
+  "homepage": "https://github.com/joepennock-401-advanced-javascript/api-server#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
