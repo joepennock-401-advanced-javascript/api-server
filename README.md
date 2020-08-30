@@ -1,6 +1,6 @@
 [ANOTHER README EXAMPLE HERE](https://github.com/codefellows/seattle-javascript-401n17/blob/master/reference/submission-instructions/labs/example/README.md)
 
-# LAB - Class xx
+# LAB - Class xX
 
 ## Project: Project Name Here
 
