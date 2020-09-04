@@ -32,6 +32,7 @@
   "homepage": "https://github.com/joepennock-401-advanced-javascript/api-server#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuid": "^8.3.0"
   }
 }
