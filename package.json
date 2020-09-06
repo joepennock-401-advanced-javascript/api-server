@@ -8,8 +8,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "--jest --verbose --coverage",
-    "watch": "--jest --verbose --coverage --watchAll"
+    "test": "jest --verbose --coverage",
+    "watch": "jest --watchAll --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,10 @@
   },
   "homepage": "https://github.com/joepennock-401-advanced-javascript/api-server#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^26.4.2",
+    "uuid": "^8.3.0"
   }
 }
