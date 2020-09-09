@@ -15,7 +15,7 @@ const server = require('../lib/server');
  */
 const req = supergoose(server.server);
 
-describe('Test suite for API server with in memory storage', () => {
+xdescribe('Test suite for API server with in memory storage', () => {
 
   describe('Testing /categories routes', () => {
 
