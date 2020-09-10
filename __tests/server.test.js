@@ -45,7 +45,7 @@ xdescribe('Test suite for API server with in memory storage', () => {
 
     it('A get() to categories will return the object that as been requested.', async () => {
       
-      let res = await req.get('/products').send();
+      let res = await req.get('/categories').send();
       expect(res.body[0].name).toEqual("test");
 
     });
