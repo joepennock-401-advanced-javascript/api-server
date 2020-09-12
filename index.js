@@ -8,10 +8,10 @@ const server = require('./lib/server');
 const mongoose = require('mongoose');
 
 /** Establish connection to MongoDB via mongoose using .env variable for URI */
-// mongoose.connect(process.env.MONGODB_URI,{
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
+mongoose.connect(process.env.MONGODB_URI,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 /** Establish connection to server running on local host using .env variable for PORT */
 server.start(process.env.PORT);
