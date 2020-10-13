@@ -13,20 +13,20 @@ const server = require('../lib/server');
 /**
  * Spin up test server via supergoose.
  */
-const req = supergoose(server.server);
+const req = supergoose(server.app);
 
 describe('Test suite for API server with in memory storage', () => {
 
   describe('Testing /categories routes', () => {
 
-    it('A .post() route should send a 500 server error with invalid input', async () => {
+    it('A .post() route should send a 404 error on a bad route', async () => {
       
       let obj = {
         foo: "bar",
       };
 
-      let res = await req.post('/categories').send(obj);
-      expect(res.status).toEqual(500);
+      let res = await req.post('/bad').send(obj);
+      expect(res.status).toEqual(404);
 
     });
 
@@ -38,14 +38,14 @@ describe('Test suite for API server with in memory storage', () => {
         description: "test"
       };
 
-      let res = await req.post('/categories').send(obj);
+      let res = await req.post('/api/memory/categories').send(obj);
       expect(res.status).toEqual(201);
       
     });
 
     it('A get() to categories will return the object that as been requested.', async () => {
       
-      let res = await req.get('/categories').send();
+      let res = await req.get('/api/memory/categories').send();
       expect(res.body[0].name).toEqual("test");
 
     });
@@ -58,7 +58,7 @@ describe('Test suite for API server with in memory storage', () => {
         description: "test"
       };
 
-      let res = await req.post('/categories').send(obj);
+      let res = await req.post('/api/memory/categories').send(obj);
       expect(res.body.id).toBeDefined();
       
     });
@@ -73,7 +73,7 @@ describe('Test suite for API server with in memory storage', () => {
         foo: "bar",
       };
 
-      let res = await req.post('/products').send(obj);
+      let res = await req.post('/api/memory/products').send(obj);
       expect(res.status).toEqual(500);
 
     });
@@ -87,14 +87,14 @@ describe('Test suite for API server with in memory storage', () => {
         description: "test"
       };
 
-      let res = await req.post('/products').send(obj);
+      let res = await req.post('/api/memory/products').send(obj);
       expect(res.status).toEqual(201);
       
     });
 
     it('A get() to products will return the object that as been requested.', async () => {
       
-      let res = await req.get('/products').send();
+      let res = await req.get('/api/memory/products').send();
       expect(res.body[0].name).toEqual("test");
 
     });
@@ -108,7 +108,7 @@ describe('Test suite for API server with in memory storage', () => {
         description: "test"
       };
 
-      let res = await req.post('/products').send(obj);
+      let res = await req.post('/api/memory/products').send(obj);
       expect(res.body.id).toBeDefined();
       
     });
