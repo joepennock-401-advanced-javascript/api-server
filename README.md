@@ -1,7 +1,7 @@
 <!---
 [ANOTHER README EXAMPLE HERE](https://github.com/codefellows/seattle-javascript-401n17/blob/master/reference/submission-instructions/labs/example/README.md)
 --->
-# LAB - Class 07
+# LAB - Class 08
 
 ## Project: API Server
 
@@ -12,7 +12,7 @@
 - [ci/cd](https://github.com/joepennock-401-advanced-javascript/api-server/actions)
 - [back-end server url](#) - N/A
 - [front-end application](#) - N/A
-- [Current PR Request](https://github.com/joepennock-401-advanced-javascript/api-server/pull/5)
+- [Current PR Request](https://github.com/joepennock-401-advanced-javascript/api-server/pull/6)
 - [API Swagger Documentation](https://github.com/joepennock-401-advanced-javascript/api-server/blob/master/docs/openapi.json)
 
 ### Setup
@@ -32,6 +32,7 @@ Initial project setup will require a few dependencies to be installed from `npm`
 #### `.env` requirements (where applicable)
 
 - `PORT` - 3000
+- `MONGODB_URI` - mongodb://localhost:27017/api-server
 
 <!---
 - `PORT` - Port Number
@@ -48,16 +49,14 @@ This will connect the server to whatever port you have in the `.env`, which in o
 
 For testing purposes, you will want to use an API testing tool such as the CLI based [httpie](https://httpie.org/) or the [postman](https://www.postman.com/) or [insomnia](https://insomnia.rest/) GUI applications. Once youu have either of those set up, you can send `GET`, `POST`, `PUT` and `DELETE` requests to your server on `localhost:3000` and receive back responses in your API testing tool of choice.
 
-IMPORTANT NOTE: Since this is currently setup with an in memory storage, each time the server restarts you will lose all data saved. To get around this and to properly test the `GET` routes, simply make a `POST` request each time you restart the server to ensure that your in-memory 'database' has something in it.
-
 <!--- #### How to use your library (where applicable) --->
 
 #### Tests
 
 To run tests, simply type the command `npm test server.test.js`. This will run all unit tests for the server file. Currently, there are unit tests set up for each of the two types of routes, `products` and `categories`. 
-- There are tests to affirm that the error handlers for `404` and `500` errors are working as intended. 
-- There are also tests to affirm that when using a `post()` route, you return a `201` response indicating that a new record was successfully added. 
-- The final unit test verifies that when a record is added, an ID is added to the request.body. NOTE: This will become obsolete when server is connected to a MongoDB.
+- There are tests to affirm that the error handler for `404` errors is working as intended. 
+- There are also tests to affirm that when using a `POST` route or `GET` route, you return a `201` or `200` response, respectively, indicating that a new record was successfully added or retrieved.
+
 <!---
 - How do you run tests?
 - Any tests of note?
